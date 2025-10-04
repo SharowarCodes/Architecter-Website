@@ -1,0 +1,27 @@
+
+
+/* ✅ 1. Google Font import must come first */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+/* Active link underline style for Navbar */
+a.active {
+  position: relative;
+}
+
+a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transition: 0.3s ease;
+}
+
+/* Global font style */
+body {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  color: #000000;
+}
